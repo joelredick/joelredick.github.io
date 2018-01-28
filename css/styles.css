@@ -1,0 +1,55 @@
+body, html {
+  font-size: 16px;
+  height: 100%;
+  line-height: 1.618;
+}
+
+body, h1, h2, h3 {
+  font-family: "Roboto", serif;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Parallax Effect */
+.pimg-1, .pimg-2, .pimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First Image */
+.pimg-1 {
+  background-image: url("https://www.jpl.nasa.gov/images/juno/20170217/PIA21382-16.jpg");
+  min-height: 100%;
+}
+
+/* Second Image */
+.pimg-2 {
+  background-image: url('https://www.nasa.gov/sites/default/files/images/365640main_PIA11141_full.jpg');
+  min-height: 400px;
+}
+
+/* Third Image */
+.pimg-3 {
+  background-image: url('https://eoimages.gsfc.nasa.gov/images/imagerecords/85000/85855/iss043e86375_lrg.jpg');
+  min-height: 400px;
+}
+
+.w3-hover-opacity {
+  cursor: pointer;
+}
+
+#googleMaps {
+  width: 400px;
+  height: 400px;
+}
+
+/* Mobile Non Scrolling Parallax */
+@media only screen and (max-device-width: 1024px) {
+  .pimg-1, .pimg-2, .pimg-3 {
+    background-attachment: scroll;
+  }
+}
